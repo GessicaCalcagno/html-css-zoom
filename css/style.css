@@ -1,0 +1,80 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+header{
+    display: flex;
+    justify-content: end;
+    background: black;
+    height: 20px;
+    gap: 6px;
+}
+
+/* MAIN */
+/* COMMON */
+
+.wrapper {
+    margin: 0 auto;
+    width: 100%;
+    height: calc(100vh - 100px);
+    padding: 40px 40px 20px 40px;
+    background-color: black; 
+    overflow-y: scroll;
+    /* max-width: 1100px; */
+  }
+
+/* UTILITIES */
+.flex {
+    display: flex;
+}
+
+.wrap{
+    flex-wrap: wrap;
+
+}
+
+/* main{
+    position: relative;
+    margin-bottom: 100px;
+} */
+
+/* GRIGLIA */
+.col {
+    width: calc(100% / 7);
+    padding: 5px;
+    /* background-color: blue; */
+    position: relative;
+}
+
+.bk-gray{
+    color: white;
+    font-size: 0.6rem;
+    padding: 2px;
+    background-color: rgba(61, 60, 60, 0.475);
+}
+.speaker{
+    position: absolute;
+    background-color: rgba(61, 60, 60, 0.475);
+    bottom: 9px;
+    left: 6px;
+    color: white;
+    font-size: 0.6rem;
+    padding: 2px;
+}
+
+footer {
+    height: 100px;
+    background-color: rgb(62, 62, 62);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 9999; 
+    /* justify-content: center; */
+}
