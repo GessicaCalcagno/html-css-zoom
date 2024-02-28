@@ -3,18 +3,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 img {
     max-width: 100%;
 }
 
-header{
+header {
     display: flex;
     justify-content: end;
-    background: black;
-    height: 20px;
+    background: rgb(0, 0, 0);
+    height: 40px;
     gap: 6px;
+    padding: 5px 20px 10px;
 }
 
 /* MAIN */
@@ -25,19 +27,19 @@ header{
     width: 100%;
     height: calc(100vh - 100px);
     padding: 40px 40px 20px 40px;
-    background-color: black; 
-    overflow-y: scroll;
+    background-color: rgb(5, 5, 5);
+    overflow-y: auto;
+    /* overflow-y: scroll; "Meglio auto perchè se non c'è il contenuto da scrollare la barra non appare!" */
     /* max-width: 1100px; */
-  }
+}
 
 /* UTILITIES */
 .flex {
     display: flex;
 }
 
-.wrap{
+.wrap {
     flex-wrap: wrap;
-
 }
 
 /* main{
@@ -53,28 +55,91 @@ header{
     position: relative;
 }
 
-.bk-gray{
+.bk-gray {
     color: white;
-    font-size: 0.6rem;
-    padding: 2px;
-    background-color: rgba(61, 60, 60, 0.475);
+    font-size: 0.8rem;
+    padding: 6px;
+    background-color: rgba(121, 117, 117, 0.5);
+    border-radius: 2px;
+    border: 0;
 }
-.speaker{
+
+.speaker {
     position: absolute;
-    background-color: rgba(61, 60, 60, 0.475);
-    bottom: 9px;
+    background-color: rgba(14, 13, 13, 0.486);
+    bottom: 10px;
     left: 6px;
     color: white;
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     padding: 2px;
 }
 
+
+/* FOOTER */
 footer {
     height: 100px;
     background-color: rgb(62, 62, 62);
     position: fixed;
     bottom: 0;
     width: 100%;
-    z-index: 9999; 
-    /* justify-content: center; */
+    z-index: 9999;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    padding: 20px 0 20px 4px;
+
+}
+
+.footer-left,
+.footer-right {
+    height: 100%;
+    width: 20%;
+    align-items: center;
+    justify-content: center;
+    /* background-color: brown; */
+}
+
+
+.footer-centre {
+    display: flex;
+    height: 100%;
+    width: 60%;
+    /* background-color: aquamarine; */
+    align-items: center;
+    padding-left: 90px;
+}
+
+.menu-list {
+    list-style-type: none;
+    gap: 8px;
+    color: white;
+}
+
+.menu-list li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+
+li>.green {
+    color: rgb(9, 96, 42);
+}
+
+.text {
+    margin-right: 10px;
+    /* Aggiunge spazio tra i testi */
+}
+
+.footer-right {
+    color: red;
+    font-size: bold;
+    background-color: rgb(87, 87, 87);
+}
+
+li> .fa-solid {
+    font-size: 25px;
+
 }
